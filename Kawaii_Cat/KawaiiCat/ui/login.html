@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="ui/style.css">
+    <title>Title</title>
+</head>
+
+    <body>
+    <header>
+        <div class="content">
+            <div class="logo">
+                <a href="{{ @BASE }}/"><img src="ui/images/logo.png" class="img"></a>
+            </div>
+            <nav>
+                <ul>
+                    <a href="{{ @BASE}}/streetcat">
+                        <li>STREET CATS</li>
+                    </a>
+                    <a href="{{ @BASE }}/gallery">
+                        <li>CAT GALLERY</li>
+                    </a>
+                    <a href="#Play">
+                        <li>PLAY NOW</li>
+                    </a>
+                    <a href="#About">
+                        <li>ABOUT US</li>
+                    </a>
+
+                </ul>
+            </nav>
+            <div class="login">
+                <a href="{{ @BASE }}/Login">LOGIN</a>
+            </div>
+        </div>
+    </header>
+
+<main style="padding-top: 40px;">
+<div class="gameplay" style="margin-bottom: 40px; padding-bottom: 40px">
+    <h2 style="text-align: center; padding-bottom: 10px; padding-top: 20px"> Login</h2>
+    <div class="canvas" style="width: 40%; border-radius: 10px">
+        <form id="form1" name="form1" method="post" action="{{ @BASE }}/login">
+            <div class="loginbox">
+                Please enter your Username:
+                <input name="name" type="text" placeholder="Username" id="name" size="50" />
+            </div>
+            <div class="loginbox">
+                Please enter your Password:
+                <input name="colour" type="text" placeholder="Password" id="colour" size="50" />
+            </div>
+            <p style="padding: 10px">
+                <input type="submit" name="Submit" value="Login" />
+            </p>
+        </form>
+        <p style="text-align: center"> don't have an account? </p>
+        <div style="text-align: center"><a href="{{ @BASE }}/signup"> Sign Up Here</a></div>
+    </div>
+</div>
+</main>
+
+<footer style="margin-top: 50px">
+    <div class="content">
+        <div class="logo">
+            <img src="ui/images/logo.png" class="img">
+        </div>
+    </div>
+    <center>Ⓒ 2022, Copyright@kawaii cat.com</center>
+</footer>
+</body>
+</html>

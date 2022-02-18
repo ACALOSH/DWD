@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+}
+nav{
+    background: rgb(255,253,237);
+    width:800px;
+    margin-left:100px;
+    float:left;
+    line-height: 100px
+}
+a {
+    font-family: "poppin";
+    text-decoration: none
+}
+ul{
+    list-style: none
+}
+header{
+    width:100%;
+    background: #fffded;
+    position: fixed;
+    top:0;
+    left:0;
+    height:100px;
+
+}
+body {
+    /* kawaii-type font  */
+    background: #fae5df;
+    font-family: 'proxima-soft', sans-serif; color: #d178d7;
+    /*one Em roughly ten pixels (16 x 62.5% = 10)*/
+    font-size:10px;
+    letter-spacing: 1.5px;
+    margin: 0;
+    text-align: center;
+}
+nav ul a li{
+    width:23%;
+    margin:0 1%;
+    float:left;
+    text-align: center;
+    font-weight:bold;
+}
+nav ul a {
+    width: 100%;
+    color:#354E57;
+}
+
+.login{
+    width:70px;
+    text-align: center;
+    float: right;
+    font-size: unset;
+    background: #f9d670;
+    border-radius:25px;
+    padding:2px 20px;
+    margin:35px auto;
+    font-weight:bold;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0.5em;
+}
+.content{
+    width:1200px;
+    margin:0 auto;
+    overflow: hidden;
+}
+
+ul > li {
+    list-style: none;
+}
+.card,
+.reset-btn {
+    cursor: pointer;
+}
+.btn {
+    border-radius: 1em;
+    border: none;
+    color: #d178d7;
+    box-shadow:3px 1px 6px 0 rgb(165, 79, 168);
+    padding: 0.9em;
+}
+.logo{
+    width:200px;
+    float:left;
+    margin-top:15px;
+    line-height: 100px
+}
+
+/*----------------------------------
+Header
+------------------------------------*/
+h1 {
+    font-size: 1em;
+    font-weight: 600;
+}
+h2 {
+    font-size: 2.5em;
+    font-weight: 400;
+}
+p {
+    font-size: 1.6em;
+}
+h3 {
+    font-weight: 500;
+}
+
+
+/*----------------------------------
+Section - Score Panel
+------------------------------------*/
+.score-panel {
+    font-size: 1.4em;
+    padding: 1em 0 2em;
+}
+.star-rating > li {
+    display: inline-block;
+    padding: 0.5em;
+}
+.moves-counter {
+    padding: 0.5em;
+}
+.reset-btn {
+    background: #d178d7; color: #efe4cc;
+}
+
+.timer-container {
+    background: #efe4cc;
+    border-radius: 0.5em;
+    color: #7a406a;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+.timer {
+    font-size: 1em;
+}
+
+
+
+/*----------------------------------
+Section - Modal (pop-up)
+------------------------------------*/
+/* Modal (background) */
+.modal {
+    /*Hidden by default */
+    display: none;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* Fallback color */
+    background-color: rgb(46, 61, 73);
+    /* With opacity */
+    background-color: rgba(46, 61, 73, 0.6);
+}
+/* Modal Content/Box */
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    /* 5% from the top and centered */
+    margin: 3% auto;
+    border: 0.8em solid #d39bd7;
+    padding-right: 2em;
+    width: 60%;
+}
+/* The Close Button */
+.close {
+    align-self: flex-end;
+    color: #a54fa8;
+    font-size: 5em;
+}
+.close:hover,
+.close:focus {
+    color: #e649f1;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Modal Image*/
+.modal-img {
+    display: inline-block;
+    margin: 1em 0 1em;
+    width: 10em;
+}
+p.stats {
+    font-weight: 600;
+}
+p.stats:last-child {
+    margin-bottom: 1em;
+}
+.play-again-btn {
+    background: #a54fa8; color: #efe4cc;
+    margin-bottom: 1em;
+}
+
+
+
+/*----------------------------------
+Deck of Cards
+------------------------------------*/
+/*Mobile first responsiveness*/
+.deck {
+    background: linear-gradient(to bottom, #d2a3d5, #d39bd7);
+    border-radius: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 35em;
+    margin-bottom: 6em;
+    padding: 0.5em;
+    width: 35em;
+}
+.card {
+    box-shadow: 3px 2px 10px 0 rgb(239, 228, 204);
+}
+.card {
+    background-image:url("images/pawprint.pink.png");
+    background-size: 100%;
+    border-radius: 0.5em;
+}
+/*
+To disable the color highlight if and img is clicked
+https://stackoverflow.com/questions/21107439/disable-or-change-firefoxs-element-image-highlight-color
+*/
+img {
+    user-select: none;
+    width: 12.5em;
+}
+.deck img {
+    visibility: hidden;
+}
+.deck .card.flip {
+    background: #fff;
+    cursor: default;
+    transform: rotateY(180deg);
+    transition: transform 0.3s linear;
+    pointer-events: none;
+}
+.flip img {
+    background: #fff;
+    visibility: visible;
+}
+.deck .card.match {
+    background: #FFC0CB;
+    visibility: visible;
+    cursor: default;
+    animation: pulse 1s;
+}
+.match img {
+    background: #ffaaaa;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    80% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 550px) {
+    .deck  {
+        height: 50em;
+        padding: 2em;
+        width: 50em;
+    }
+    .card {
+        height: 10em;
+        width: 10em;
+    }
+    .deck img {
+        width: 9em;
+    }
+    .modal-content h2 {
+        font-size: 4em;
+    }
+    .play-again-btn {
+        font-size: 1.8em;
+    }
+}
+/*----------------------------------
+Desktops
+------------------------------------*/
+@media screen and (min-width: 800px) {
+
+    h1 {
+        font-size: 6em;
+    }
+    h2 {font-weight: 600}
+    p {
+        font-size: 2.3em;
+    }
+    .deck  {
+        height: 70em;
+        width: 55em;
+    }
+    .card {
+        height: 15em;
+        width: 11.25em;
+    }
+    /*----------- card background layout -----------*/
+    .deck img {
+        width: 13em;
+    }
+    .reset-btn {
+        font-size: 0.8em;
+        color: #efe4cc;
+    }
+    .footer {
+        font-size: 1.2em;
+    }
+
+    .modal-content h2 {
+        font-size: 5em;
+    }
+    /* Modal Image*/
+    .modal-img {
+        width: 20em;
+    }
+    .play-again-btn {
+        font-size: 2em;
+    }
+}

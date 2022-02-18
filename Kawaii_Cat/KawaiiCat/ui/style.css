@@ -1,0 +1,383 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: "poppin";
+
+	color:#354E57;
+	background: rgb(255,253,237)
+}
+a {
+	text-decoration: none
+}
+ul{
+	list-style: none
+}
+h2{
+	text-align: center;
+	align-content: center;
+	align-self: center;
+	alignment: center;
+}
+.content{
+	width:1200px;
+	margin:0 auto;
+	overflow: hidden;
+}
+header{
+	width:100%;
+	background: #fffded;
+	position: fixed;
+	top:0;
+	left:0;
+	height:100px;
+	
+}
+.img{
+	width:100%;
+}
+.logo{
+	width:200px;
+	float:left;
+	margin-top:15px;
+	line-height: 100px
+}
+nav{
+	width:800px;
+	margin-left:100px;
+	float:left;
+	line-height: 100px
+}
+nav ul a li{
+	width:23%;
+	margin:0 1%;
+	float:left;
+	text-align: center;
+	font-weight:bold;
+}
+nav ul a {
+	color:#354E57;
+}
+.login{
+	width:60px;
+	float:right;
+	background: #f9d670;
+	text-align: center;
+	border-radius:25px;
+	padding:5px 10px;
+	margin:35px 0px;
+	font-weight:bold;
+}
+main{
+	width:100%;
+	background: rgb(255,236,171);
+	align-content: center;
+	margin-top:100px;
+	overflow: hidden
+}
+.title{
+	width:450px;
+	float:left;
+	padding:150px 0px;
+}
+.title h1{
+	font-family: Kawaii Stitch;
+	font-size:50px;
+}
+.title .text{
+	font-family: Poppins;
+	font-size:20px;
+	margin:50px 0px;
+}
+.tu{
+	width:300px;
+	float:left;
+	text-align: center;
+	height:200px;
+	margin:-8px 70px;
+}
+.tu img{
+	height:450px;
+}
+.tus{
+	width:300px;
+	float:right;
+	text-align: center;
+	height:200px;
+
+}
+.tus img{
+	height:450px;
+	margin-top:200px;
+
+}
+.article{
+	width:100%;
+	overflow: hidden;
+	background: #f6f8da;
+}
+.left{
+	background: #f6f8da;
+	width:100px;
+	float:left;
+	height:504px;
+}
+.right{
+	width:1100px;
+	float:right;
+	padding:0px 50px;
+	background: #f6f8da
+}
+.right h1{
+	font-family: Kawaii Stitch;
+	font-size:40px;
+	margin:50px 0px;
+}
+.right .text{
+	font-family: Poppins;
+	font-size:20px;
+	margin:50px 0px;
+}
+.cat{
+	overflow: hidden
+}
+.mem{
+	float:left;
+	width:1000px;
+	padding:50px 50px;
+	overflow: hidden
+}
+.ri{
+	width:100px;
+	float:right;
+	
+	height:506px;
+}
+.atr{
+	width:400px;
+	float:left;
+}
+.cat-pho{
+  width:400px;
+  text-align: center;
+  float:left;
+  margin-left:100px;
+}
+.cat-pho img{
+	margin-top:150px;
+}
+.atr h1{
+	font-family: Kawaii Stitch;
+	font-size:40px;
+	margin:50px 0px;
+}
+.text{
+	font-family: Poppins;
+	font-size:20px;
+}
+.atr a{
+	display: inline-block;
+	margin-top:100px;
+	border:1px solid #333;
+	padding:5px 20px;
+	text-align: center;
+	color:#333;
+}
+.right a{
+	display: inline-block;
+	margin:50px 0px;
+	border:1px solid #333;
+	padding:5px 20px;
+	text-align: center;
+	color:#333;
+}
+.play{
+	width:100%;
+	background: #fae5df;
+	padding:50px 0px;
+	overflow: hidden;
+}
+.gamebox{
+	width:70%;
+	align-content: center;
+	float: none;
+	margin: auto;
+	padding: 10px;
+	background: #fae5df;
+	overflow: auto;
+}
+
+.play h1{
+	font-family: Kawaii Stitch;
+	font-size:40px;
+	margin:50px 0px;
+}
+.list{
+	margin:100px auto;
+}
+.list ul li{
+	width:31%;
+	margin:0 1%;
+	float:left;
+	overflow: hidden;
+	text-align: center
+}
+.all{
+	background:rgb(2249,250,219);
+	margin-top:50px;
+}
+.game{
+	width:48%;
+	margin:0 1%;
+	float:left;
+}
+.gameplay{
+	width: 90%;
+	align-content: center;
+	float: none;
+	margin: auto;
+	padding: 10px;
+	border-radius:10px;
+	background: #f8f0fa;
+}
+.canvas{
+	width: 70%;
+	float: none;
+	margin: auto;
+	padding: 30px;
+	align-content: center;
+	background: rgb(255, 252, 252);
+}
+.list ul li p{
+	margin:10px 0px;
+}
+.about{
+	width:100%;
+	background: #f8f0fa;
+	padding:50px 0px;
+	overflow: hidden;
+}
+.about-us{
+	width:600px;
+	padding:50px 0px;
+	float:left;
+}
+h1{
+	font-family: Kawaii Stitch;
+	font-size:40px;
+	margin:50px 0px;
+	width:300px;
+}
+.about-us a{
+	display: inline-block;
+	margin:20px 10px;
+	border:1px solid #999;
+	padding:5px 20px;
+	text-align: center;
+	color:#333;
+	
+}
+.about-us ul li{
+	width:31%;
+	float:left;
+	margin:150px 1%;
+	line-height: 30px
+}
+footer{
+	width: 100%;
+	position:absolute;
+	background: #ffecab;
+	padding:0px 0px;
+}
+center{
+	font-size:14px;
+}
+/*2*/
+
+.cat-right{
+	width:1200px;
+
+	float:left;
+	background: rgb(2249,250,219)
+}
+.cat-right h1,.cat-right .text{
+	padding:0 50px;
+}
+#contentop ul{
+}
+#contentop ul.first{
+	display: block;
+}
+.l-sort1{
+	overflow: hidden;
+	width:80%;
+}
+.l-sort1 ul li {
+	width:150px;
+	height:180px;
+	line-height: 320px;
+	margin:50px 85px;
+}
+#contentop{
+	background: rgb(255,253,237);
+}
+#contentop ul li{
+	overflow: hidden;
+	padding:50px 0px;
+	
+}
+.s-pho{
+	width:300px;
+	float:left;
+	text-align: left;
+	padding: 0 50px
+}
+.s-text{
+	width:600px;
+	float:left;
+	text-align: left;
+	padding: 0 50px
+}
+.s-pho img,.s-text img{
+	width:200px;
+	margin:0 50px;
+}
+.l-sort1 ul li:nth-child(1){
+	background: url(images/13.png)no-repeat;
+	background-size: contain
+}
+.l-sort1 ul li:nth-child(2){
+	background: url(images/14.png)no-repeat;
+	background-size: contain
+}
+.l-sort1 ul li:nth-child(3){
+	background: url(images/15.png)no-repeat;
+	background-size: contain
+}
+.l-sort1 ul li:nth-child(1):hover{
+	background: url(images/10.png)no-repeat;
+	background-size: contain
+}
+.l-sort1 ul li:nth-child(2):hover{
+	background: url(images/11.png)no-repeat;
+	background-size: contain
+}
+.l-sort1 ul li:nth-child(3):hover{
+	background: url(images/12.png)no-repeat;
+	background-size: contain
+}
+.clickable{
+	background: #f9d670;
+	text-align: center;
+	border-radius:25px;
+	width: 33%;
+	margin: auto;
+}
+form{
+	text-align: center;
+}
+.loginbox{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}

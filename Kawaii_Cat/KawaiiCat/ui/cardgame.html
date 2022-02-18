@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://use.typekit.net/ewk4vpo.css">
+  <link rel="stylesheet" href="ui/cardgame.css">
+  <script type="text/javascript" src="ui/js/Cardgame.js" defer></script>
+  <meta charset="UTF-8">
+  <title>cat card game</title>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <div class="content">
+      <div class="logo">
+        <a href="{{ @BASE }}/"><img src="ui/images/logo.png"></a>
+      </div>
+      <nav>
+        <ul>
+          <a href="{{ @BASE}}/streetcat" >
+            <li style="letter-spacing: .4px; font-size:16px;">STREET CATS</li>
+          </a>
+          <a href="{{ @BASE}}/gallery">
+            <li style="letter-spacing: .4px; font-size:16px;">CAT GALLERY</li>
+          </a>
+          <a href="#Play">
+            <li style="letter-spacing: .4px; font-size:16px;">PLAY NOW</li>
+          </a>
+          <a href="#About">
+            <li style="letter-spacing: .4px;font-size:16px;">ABOUT US</li>
+          </a>
+
+        </ul>
+      </nav>
+      <div class="login">
+        <a href="{{ @BASE }}/Login" style="letter-spacing: .4px; font-size:16px;">LOGIN</a>
+      </div>
+    </div>
+  </header>
+  <div class="center" style="margin-top: 110px; font-size:9px"><h1>'Kawaii Cats' Snap!</h1></div>
+
+
+  <section class="score-panel">
+    <h3 style="font-size:15px">Score Panel</h3>
+    <ul id="star-rating" class="star-rating">
+      <li class="star"><i class="fa fa-star"></i></li>
+      <li class="star"><i class="fa fa-star"></i></li>
+      <li class="star"><i class="fa fa-star"></i></li>
+    </ul>
+    <span class="moves-counter">0</span> Moves
+    <div class="timer-container">
+      <span class="timer"><i class="fa fa-hourglass-start" ></i> Timer: 00:00</span>
+    </div>
+    <div class="reset">
+      <button class="btn reset-btn">Reset <i class="fa fa-repeat"></i></button>
+    </div>
+  </section>
+  <!-- Modal section-->
+  <!-- Modal section-->
+
+  <!-- Modal -->
+  <section class="win-game-modal">
+    <div id="modal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Pawsome!</h2>
+        <p>You have found all 8 pairs of cards.</p>
+        <img class="modal-img" src="ui/images/pawsomepaw100px.png" alt="cat paw in the air up">
+        <button class="btn play-again-btn">Play Again?</button>
+      </div>
+    </div>
+  </section>
+
+
+  <ul class="deck">
+  </ul>
+
+</div>
+
+</body>
+</html>
+

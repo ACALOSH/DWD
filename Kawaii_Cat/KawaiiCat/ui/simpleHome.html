@@ -1,0 +1,166 @@
+<!--
+A very simple home page View template:
+just contains a link to the form that we will
+use for collecting data.
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>Cat</title>
+    <link rel="stylesheet" type="text/css" href="ui/style.css">
+</head>
+<body>
+    <header>
+        <div class="content">
+            <div class="logo">
+                <a href="{{ @BASE }}/"><img src="ui/images/logo.png" class="img"></a>
+            </div>
+            <nav>
+                <ul>
+                    <a href="#Street">
+                        <li>STREET CATS</li>
+                    </a>
+                    <a href="#Cat">
+                        <li>CAT GALLERY</li>
+                    </a>
+                    <a href="#Play">
+                        <li>PLAY NOW</li>
+                    </a>
+                    <a href="#About">
+                        <li>ABOUT US</li>
+                    </a>
+
+                </ul>
+            </nav>
+            <div class="login">
+                <a href="{{ @BASE }}/Login">LOGIN</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <div class="title">
+                <h1><img src="ui/images/16.png" class="img"></h1>
+                <p class="text">
+                    Welcome to Kawaii Cat!
+                    This is a cat centered website with educational games, a cat gallery and other stories.
+                </p>
+            </div>
+            <div class="tu">
+                <img src="ui/images/1.png" class="img">
+            </div>
+            <div class="tus">
+                <img src="ui/images/2.png" class="img">
+            </div>
+        </div>
+    </main>
+    <a id="Street"></a>
+    <div class="article">
+        <div class="content">
+
+            <div class="right">
+                <h1><img src="ui/images/17.png" class="img"></h1>
+                <p class="text" style="margin-bottom: 5px">There are many different reasons that you can see the cats on the street.</p>
+                <p class="text" style="margin-top: 0px">Let us read their story.</p>
+                <a href="{{ @BASE }}/streetcat">Explore</a>
+            </div>
+        </div>
+    </div>
+    <a id="Cat"></a>
+    <div class="cat">
+        <div class="content">
+            <div class="mem">
+                <div class="atr">
+                    <h1><img src="ui/images/18.png" class="img"></h1>
+                    <p class="text">Explore our gallery of community uploaded cat photos or upload your own picture</p>
+                    <a href="{{ @BASE }}/gallery">Start now</a>
+                </div>
+                <div class="cat-pho">
+                    <img src="ui/images/3.png" class="img">
+                </div>
+            </div>
+            <div class="ri"></div>
+        </div>
+    </div>
+    <a id="Play"></a>
+    <div class="play">
+        <div class="content">
+            <h1><img src="ui/images/19.png" class="img"></h1>
+            <p class="text" style="margin-bottom: 5px">
+                Think you're a cat aficionado? Ever wonder how to help your neighbourhood strays? </p>
+            <p class="text" style="margin-top:0px">Browse and play our educational games like cat snap or our cat quiz! </p>
+            <div class="list">
+                <ul>
+                    <li>
+                        <div class="game">
+                            <a href= "{{ @BASE }}/simpleform"><img src="ui/images/4.png" class="img"></a>
+                        </div>
+                        <div class="game">
+                            <p>Game </p>
+                            <h3>Feral Cat House Builder</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="game">
+                            <a href="{{ @BASE }}/simpleQuiz">
+                                <img src="ui/images/5.png" class="img">
+                            </a>
+                        </div>
+                        <div class="game">
+                            <p>Game </p>
+                            <h3>Cat Quiz</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="game">
+                            <a href="{{ @BASE }}/cardgame">
+                                <img src="ui/images/6.png" class="img">
+                            </a>
+                        </div>
+                        <div class="game">
+                            <p>Game </p>
+                            <h3>Cat Snap</h3>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <a id="About"></a>
+    <div class="about">
+        <div class="content">
+            <div class="about-us">
+                <h1><img src="ui/images/20.png" class="img"></h1>
+                <p class="text">We are three dynamic web design students from all over the world who share a love of cats and design! Click on the resources below to learn a bit more about this project and the work behind the scenes.</p>
+                <a href="PDF.pdf" >Report</a>
+                <!--  -->
+                <a href="https://www.youtube.com/" >Presentation</a>
+            </div>
+            <div class="about-us">
+                <ul>
+                    <li>
+                        <img src="ui/images/7.png" class="img">Anna Aloshine
+                    </li>
+                    <li>
+                        <img src="ui/images/8.png" class="img">Louisa Easeman
+                    </li>
+                    <li>
+                        <img src="ui/images/9.png" class="img">Qianqian Zhang
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="content">
+            <div class="logo">
+                <img src="ui/images/logo.png" class="img">
+            </div>
+
+        </div>
+        <center>Ⓒ 2022, Copyright@kawaii cat.com</center>
+    </footer>
+</body>
+</html>
